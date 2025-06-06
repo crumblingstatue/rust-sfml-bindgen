@@ -50,6 +50,7 @@ fn conv_type_ident(ident_: &str) -> String {
         "double" => "f64",
         "void" => "c_void",
         "char" => "c_char",
+        "char32_t" => "char",
         "int8_t" => "i8",
         "uint8_t" => "u8",
         "int16_t" => "i16",
@@ -69,6 +70,7 @@ fn conv_type_ident(ident_: &str) -> String {
         "std::string" => "sfStdString",
         "std::vector<std::string>" => "sfStdStringVector",
         "std::vector<sf::VideoMode>" => "sfVideoModeVector",
+        "std::vector<sf::SoundChannel>" => "sfSoundChannelVector",
         _ => ident_,
     })
 }
